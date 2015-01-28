@@ -1,3 +1,3 @@
 # Pokedex
 
-Its a simple python based Image Search Engine
+Its a simple python based Content Based Image Retrieval (CBIR) system.
