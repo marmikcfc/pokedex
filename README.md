@@ -1,3 +1,3 @@
 # Pokedex
 
-Its a simple python based Content Based Image Retrieval (CBIR) system.
+Its a simple Content Based Image Retrieval (CBIR) system witten in Python.
