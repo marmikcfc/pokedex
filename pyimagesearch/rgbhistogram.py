@@ -17,3 +17,4 @@ class RGBHistogram:
 
 		# return out 3D histogram as a flattened array
 		return hist.flatten()
+		
