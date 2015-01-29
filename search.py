@@ -39,18 +39,18 @@ for (query, queryFeatures) in index.items():
 	# images that are 400x166 pixels
 	montageA = np.zeros((166 * 5, 400, 3), dtype = "uint8")
 	montageB = np.zeros((166 * 5, 400, 3), dtype = "uint8")
-	montagefinal = np.zeros((166 * 5, 400, 3), dtype = "uint8")
+	#montagefinal = np.zeros((166 * 5, 400, 3), dtype = "uint8")
 
 
 
 	# grab the result (we are using row-major order) and
 	# load the result image
-	(score, imageName) = results[0]
-	path = (imageName)
-	print path
-	result = cv2.imread(path)
-	print "\t%d. %s : %.3f" % (0 + 1, imageName, score)
-	montagefinal[0 * 166:(0 + 1) * 166, :] = result
+	#(score, imageName) = results[0]
+	#path = (imageName)
+	#print path
+	#result = cv2.imread(path)
+	#print "\t%d. %s : %.3f" % (0 + 1, imageName, score)
+	#montagefinal[0 * 166:(0 + 1) * 166, :] = result
 
 	# loop over the top ten results
 	for j in xrange(0, 10):
@@ -72,9 +72,8 @@ for (query, queryFeatures) in index.items():
 			montageB[(j - 5) * 166:((j - 5) + 1) * 166, :] = result
 
 	# show the results
-	cv2.imshow("Final",montagefinal)
+	#cv2.imshow("I'm feeling lucky",montagefinal)
 	cv2.imshow("Results 1-5", montageA)
 	cv2.imshow("Results 6-10", montageB)
 	cv2.waitKey(0)
 
-	#fina; result
