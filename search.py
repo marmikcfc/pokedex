@@ -45,12 +45,12 @@ for (query, queryFeatures) in index.items():
 
 	# grab the result (we are using row-major order) and
 	# load the result image
-	#(score, imageName) = results[0]
-	#path = (imageName)
-	#print path
-	#result = cv2.imread(path)
-	#print "\t%d. %s : %.3f" % (0 + 1, imageName, score)
-	#montagefinal[0 * 166:(0 + 1) * 166, :] = result
+	(score, imageName) = results[0]
+	path = (imageName)
+	print path
+	result = cv2.imread(path)
+	print "\t%d. %s : %.3f" % (0 + 1, imageName, score)
+	montagefinal[0 * 166:(0 + 1) * 166, :] = result
 
 	# loop over the top ten results
 	for j in xrange(0, 10):
